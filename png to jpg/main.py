@@ -42,7 +42,7 @@ def getPNG():
     import_file_path = filedialog.askopenfilename()
     im1 = Image.open(import_file_path)
 
-browseButton_PNG = ttk.Button(text = "        Import JPG File        ", command = getPNG)
+browseButton_PNG = ttk.Button(text = "        Import PNG File        ", command = getPNG)
 browseButton_PNG.place(x = 100, y = 120)
 
 def convertToJPG():
@@ -51,7 +51,7 @@ def convertToJPG():
     export_file_path = filedialog.asksaveasfilename(defaultextension='.jpg')
     im1.save(export_file_path)
 
-saveAsButton_JPG = ttk.Button(text = '   Convert  JPG to PNG    ', command = convertToJPG)
+saveAsButton_JPG = ttk.Button(text = '   Convert  PNG to JPG    ', command = convertToJPG)
 saveAsButton_JPG.place(x = 100, y = 190)
 
 labelslider()
